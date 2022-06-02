@@ -3,6 +3,7 @@
   padding: 0;
   box-sizing: border-box;
 }
+<<<<<<< HEAD
 
 body {
   /* more on this crazy alphanumerical value in a minute! */
@@ -16,6 +17,15 @@ header {
   background-color: #39a6b2;
 }
 
+=======
+header {
+  background-color: #39a6b2;
+  padding: 10px;
+}
+section {
+  padding: 60px;
+}
+>>>>>>> ff75d781b91f98a3fcfc7fc6027dcfd9c39da1ea
 header h1 {
   font-weight: bold;
   font-size: 36px;
@@ -23,11 +33,25 @@ header h1 {
   margin: 0;
   display: inline;
 }
+<<<<<<< HEAD
 header a {
   text-decoration: none;
   color: #fce138;
 }
 
+=======
+
+header a {
+  text-decoration: none;
+
+  color: #fce138;
+}
+
+header ul {
+  list-style-type: none;
+}
+
+>>>>>>> ff75d781b91f98a3fcfc7fc6027dcfd9c39da1ea
 header nav {
   float: right;
   margin: 7px 0;
@@ -42,15 +66,31 @@ header nav ul li a {
   font-weight: lighter;
   font-size: 22px;
 }
+<<<<<<< HEAD
+=======
+/*
+IDS OVER CLASSES
+Classes over elements
+EQUAL ONES DEPENDS ON ORDER of appearance
+*/
+>>>>>>> ff75d781b91f98a3fcfc7fc6027dcfd9c39da1ea
 
 footer {
   background: #fce138;
   width: 100%;
+<<<<<<< HEAD
   padding: 40px 35px;
 }
 
 footer h2 {
   display: inline;
+=======
+  padding: 50px;
+}
+
+footer h2 {
+  display: ;
+>>>>>>> ff75d781b91f98a3fcfc7fc6027dcfd9c39da1ea
   color: #024e76;
   font-size: 30px;
   margin: 0;
@@ -66,6 +106,7 @@ footer a {
   color: #024e76;
 }
 
+<<<<<<< HEAD
 section {
   padding: 60px;
 }
@@ -73,12 +114,19 @@ section {
 /* Hero Style Start */
 .hero {
   background-image: url('../images/hero-bg.jpg');
+=======
+.hero {
+  background-image: url("../images/hero-bg.jpg");
+>>>>>>> ff75d781b91f98a3fcfc7fc6027dcfd9c39da1ea
   height: 600px;
   background-size: cover;
   background-position: center;
   position: relative;
 }
+<<<<<<< HEAD
 /* Hero Style End */
+=======
+>>>>>>> ff75d781b91f98a3fcfc7fc6027dcfd9c39da1ea
 
 .hero-form {
   border: 3px solid #024e76;
@@ -91,13 +139,23 @@ section {
   right: 140px;
 }
 
+<<<<<<< HEAD
+=======
+.hero-form p {
+  margin: 5px 0 15px 0;
+}
+
+>>>>>>> ff75d781b91f98a3fcfc7fc6027dcfd9c39da1ea
 .hero-form h3 {
   font-size: 24px;
   margin: 0;
 }
+<<<<<<< HEAD
 .hero-form p {
   margin: 5px 0 15px 0;
 }
+=======
+>>>>>>> ff75d781b91f98a3fcfc7fc6027dcfd9c39da1ea
 
 .form-input {
   border: 1px solid #024e76;
@@ -108,7 +166,10 @@ section {
   width: 100%;
   margin-bottom: 15px;
 }
+<<<<<<< HEAD
 
+=======
+>>>>>>> ff75d781b91f98a3fcfc7fc6027dcfd9c39da1ea
 .hero-form label {
   margin: 0 5px;
 }
@@ -138,6 +199,26 @@ section {
   background: #fce138;
 }
 
+<<<<<<< HEAD
+=======
+.section-title {
+  font-size: 55px;
+  color: #024e76;
+  margin-bottom: 35px;
+  padding: 0 100px 20px 100px;
+  display: inline-block;
+  border-bottom: 3px solid;
+}
+
+.primary-border {
+  border-color: #fce138;
+}
+
+.secondary-border {
+  border-color: #39a6b2;
+}
+
+>>>>>>> ff75d781b91f98a3fcfc7fc6027dcfd9c39da1ea
 .steps div {
   margin-bottom: 80px;
 }
@@ -158,6 +239,7 @@ section {
   font-size: 23px;
 }
 
+<<<<<<< HEAD
 .steps span {
   font-size: 38px;
 }
@@ -177,6 +259,11 @@ section {
 
 .secondary-border {
   border-color: #39a6b2;
+=======
+.steps div h3 span {
+  font-size: 38px;
+  color: #024e76;
+>>>>>>> ff75d781b91f98a3fcfc7fc6027dcfd9c39da1ea
 }
 
 .trainers {
@@ -185,10 +272,17 @@ section {
 
 .trainer {
   width: 900px;
+<<<<<<< HEAD
   margin: 0 auto 30px auto;
   background: #024e76;
   color: #fce138;
   overflow: auto;
+=======
+  overflow: auto;
+  margin: 0 auto 30px auto;
+  background: #024e76;
+  color: yellow;
+>>>>>>> ff75d781b91f98a3fcfc7fc6027dcfd9c39da1ea
 }
 
 .trainer img {
@@ -202,6 +296,17 @@ section {
   width: 65%;
 }
 
+<<<<<<< HEAD
+=======
+.text-left {
+  text-align: left;
+}
+
+.text-right {
+  text-align: right;
+}
+
+>>>>>>> ff75d781b91f98a3fcfc7fc6027dcfd9c39da1ea
 .trainer-bio h3 {
   font-size: 32px;
   margin-bottom: 8px;
@@ -218,6 +323,7 @@ section {
   line-height: 1.3;
 }
 
+<<<<<<< HEAD
 .text-left {
   text-align: left;
 }
@@ -230,6 +336,21 @@ section {
 .contact {
   text-align: center;
   background: #024e76;
+=======
+.section-title {
+  font-size: 55px;
+  display: inline-block;
+  padding: 0 100px 20px 100px;
+  border-bottom: 3px solid;
+  margin-bottom: 35px;
+  color: #024e76;
+}
+
+.contact {
+  text-align: center;
+  background: #024e76;
+  color: #39a6b2;
+>>>>>>> ff75d781b91f98a3fcfc7fc6027dcfd9c39da1ea
 }
 
 .contact h2 {
@@ -249,7 +370,10 @@ section {
   margin: 30px 0 0 60px;
   color: white;
 }
+<<<<<<< HEAD
 
+=======
+>>>>>>> ff75d781b91f98a3fcfc7fc6027dcfd9c39da1ea
 .contact-info h3 {
   color: #fce138;
   font-size: 32px;
@@ -262,9 +386,29 @@ section {
   font-size: 20px;
   font-style: normal;
 }
+<<<<<<< HEAD
 
+=======
+>>>>>>> ff75d781b91f98a3fcfc7fc6027dcfd9c39da1ea
 .contact-info a {
   color: #fce138;
 }
 
+<<<<<<< HEAD
 /* REACH OUT STYLES END */
+=======
+/* homapage hero */
+.hero {
+  margin: 20px;
+  background-color: white;
+  font-size: 20px;
+  color: blue;
+}
+/* secondary page hero */
+.hero-secondary {
+  margin: 20px;
+  background-color: black;
+  font-size: 20px;
+  color: red;
+}
+>>>>>>> ff75d781b91f98a3fcfc7fc6027dcfd9c39da1ea
