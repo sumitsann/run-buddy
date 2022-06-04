@@ -12,6 +12,15 @@ body {
 
 /* apply styles to <header> */
 header {
+  background-image: url("../images/hero-bg.jpg");
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  background-position: 80%;
+
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
   padding: 20px 35px;
   background-color: #39a6b2;
   display: flex;
@@ -24,6 +33,7 @@ header h1 {
   font-size: 36px;
   color: #fce138;
   margin: 0;
+  text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
 }
 header a {
   text-decoration: none;
@@ -47,11 +57,30 @@ header nav ul li {
 }
 
 header nav ul li a {
+  text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+
   padding: 10px 15px;
   font-weight: lighter;
   font-size: 1.55vw;
 }
 
+/*  Hover */
+header nav ul li a:hover {
+  background: #fce138;
+  color: #024e76;
+  border-radius: 15px;
+  text-shadow: none;
+}
+
+.hero-form button:hover {
+  background-color: #39a6b2;
+}
+
+.contact-form button:hover {
+  color: #fce138;
+  background: #39a6b2;
+}
+/* Hover End*/
 footer {
   display: flex;
   justify-content: space-between;
@@ -95,10 +124,13 @@ section {
 .hero-form {
   border: 3px solid #024e76;
   background-color: #fce138;
+  opacity: 0.8;
   padding: 20px;
   color: #024e76;
   width: 40%;
   margin: 3.5%;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  border-radius: 15px;
 }
 
 /* Hero CTA Style */
@@ -111,8 +143,8 @@ section {
   line-height: 1.2;
 }
 
-
 .hero-cta h2 {
+  text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
   font-style: italic;
   font-size: 55px;
   color: #fce138;
@@ -127,6 +159,7 @@ section {
 }
 
 .form-input {
+  background-color: rgba(255, 255, 255, 0.75);
   border: 1px solid #024e76;
   display: block;
   padding: 7px 15px;
@@ -134,7 +167,16 @@ section {
   color: #024e76;
   width: 100%;
   margin-bottom: 15px;
+  border-radius: 10px;
 }
+
+/* create a new rule for focus state */
+
+.form-input:focus {
+  background-color: rgba(255, 255, 255, 1);
+  outline: none;
+}
+
 .hero-form label {
   margin: 0 5px;
 }
@@ -145,9 +187,7 @@ section {
   border: none;
   padding: 10px 20px;
   font-size: 16px;
-}
-
-.intro {
+  border-radius: 10px;
 }
 
 .intro p {
@@ -167,11 +207,14 @@ section {
   margin: 50px auto;
   padding-bottom: 50px;
   width: 80%;
-  border-bottom: 1px solid #39a6b2;
   display: flex;
   flex-wrap: wrap;
   align-items: center;
   justify-content: space-between;
+  border-bottom: 1px solid #39a6b2;
+}
+.step:last-child {
+  border-bottom: none;
 }
 
 .step h3 {
@@ -180,7 +223,7 @@ section {
   flex: 1 30%;
 }
 
-.step-img{
+.step-img {
   flex: 1 12%;
   margin-right: 20px;
 }
@@ -189,14 +232,14 @@ section {
   max-width: 100%;
 }
 
-.step-info{
+.step-info {
   flex: 2 70%;
-  display:flex;
+  display: flex;
   flex-wrap: wrap;
   align-items: center;
 }
 
-.step-text{
+.step-text {
   flex: 12;
 }
 
@@ -206,11 +249,10 @@ section {
 }
 
 .step-text h4 {
-    font-size: 26px;
-    line-height: 1.5;
-    color: #024e76;
-  }
-
+  font-size: 26px;
+  line-height: 1.5;
+  color: #024e76;
+}
 
 .section-title {
   font-size: 48px;
@@ -266,7 +308,6 @@ section {
 
 .trainer-bio p {
   font-size: 17px;
-  
 }
 
 .text-left {
@@ -286,8 +327,8 @@ section {
   color: #fce138;
 }
 
-.contact-info{
-  display:flex;
+.contact-info {
+  display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
 }
@@ -301,7 +342,6 @@ section {
 }
 
 .contact-info div {
-
   color: white;
 }
 .contact-info h3 {
@@ -320,7 +360,10 @@ section {
   color: #fce138;
 }
 
-.contact-form input, .contact-form textarea{
+.contact-form input,
+.contact-form textarea {
+  background-color: rgba(255, 255, 255, 0.75);
+
   border: 1px solid #024e76;
   display: block;
   padding: 7px 15px;
@@ -329,36 +372,43 @@ section {
   width: 100%;
   margin-bottom: 15px;
   margin-top: 5px;
-
+  border-radius: 10px;
 }
 
-.contact-form button{
+/* create a new css rule for focus state */
+.contact-form input:focus,
+.contact-form textarea:focus {
+  background-color: rgba(255, 255, 255, 1);
+  outline: none;
+}
+
+.contact-form button {
   width: 100%;
 
-border: none;
+  border: none;
 
-background: #fce138;
+  background: #fce138;
 
-color: #024e76;
+  color: #024e76;
 
-text-align: center;
+  text-align: center;
 
-padding: 15px 0;
+  padding: 15px 0;
 
-font-size: 16px;
-
+  font-size: 16px;
+  border-radius: 10px;
 }
 /* Flex row class style */
-.flex-row{
+.flex-row {
   display: flex;
 }
 
 /* REACH OUT STYLES END */
 
-
 /* MEDIA QUERY FOR SMALLER DESKTOP SCREENS AND SMALLER */
 @media screen and (max-width: 980px) {
   header {
+    position: relative;
     padding-bottom: 0;
     justify-content: center;
   }
@@ -378,29 +428,31 @@ font-size: 16px;
     font-size: 20px;
   }
 
-  footer h2, footer div {
+  footer h2,
+  footer div {
     text-align: center;
     width: 100%;
   }
 
-  .hero-cta, .hero-form {
-  width: 100%;
-}
+  .hero-cta,
+  .hero-form {
+    width: 100%;
+  }
 
-.hero-cta {
-  text-align: center;
-}
-.section-title {
-  width: 80%;
-}
+  .hero-cta {
+    text-align: center;
+  }
+  .section-title {
+    width: 80%;
+  }
 
-.trainer {
-  flex: 0 70%;
-}
+  .trainer {
+    flex: 0 70%;
+  }
 
-.contact-info iframe{
-  flex: 1 100%;
-}
+  .contact-info iframe {
+    flex: 1 100%;
+  }
 }
 
 /* MEDIA QUERY FOR TABLETS AND SMALLER */
@@ -428,9 +480,9 @@ font-size: 16px;
   }
 
   .step-text {
-    flex: 100%;  
+    flex: 100%;
   }
-  }
+}
 
 /* MEDIA QUERY FOR MOBILE PHONES AND SMALLER */
 @media screen and (max-width: 575px) {
@@ -458,6 +510,6 @@ font-size: 16px;
     flex: 0 100%;
   }
   .contact-form {
-  order: 3;
-}
+    order: 3;
+  }
 }
